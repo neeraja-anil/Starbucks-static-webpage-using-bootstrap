@@ -1,0 +1,450 @@
+body {
+    margin: 0;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+/* header & navbar */
+.notification-bar {
+    min-height: 10px;
+    background-color: #006341;
+}
+
+.header-container {
+    background-color: rgba(0, 0, 0, .05);
+    padding-top: 20px;
+    position: relative;
+}
+
+.header-container::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #000;
+    background: rgba(0, 0, 0, .05);
+    padding-top: 20px;
+}
+
+.grid {
+    padding: 0 20px;
+    box-sizing: border-box;
+    zoom: 1;
+    text-align: left;
+}
+
+#header {
+    /* float: left; */
+    position: relative;
+    width: 100%;
+}
+
+#logo {
+    float: left;
+    width: 62px;
+    height: 62px;
+}
+
+ul {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+}
+
+.utility-list {
+    text-align: right;
+}
+
+.store {
+    color: #5b5959;
+}
+
+#nav {
+    /* float: left; */
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    clear: none;
+    margin-left: 0px;
+    margin-top: 12px;
+    width: 100%;
+
+}
+
+a.nav-link {
+    font-weight: 400;
+    color: black;
+    letter-spacing: .18em;
+    font-size: .9em;
+}
+
+.hidden-visually {
+    position: absolute;
+    overflow: hidden;
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.nav_control {
+    position: absolute;
+    top: -44px;
+    right: -12px;
+    width: 44px;
+    height: 44px;
+}
+
+.nav_control .hidden-visually {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #006341;
+    border: 12px solid #f7f7f7;
+}
+
+.nav_control button {
+    border: none;
+}
+
+.nav {
+    margin: 0;
+}
+
+li.nav-item>a:hover {
+    background-color: #000;
+    color: white;
+}
+
+@media (max-width:768px) {
+
+    #utilities,
+    .collapse {
+        display: inline;
+    }
+
+    .show-store {
+        display: none;
+    }
+
+    .utility-link {
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        width: 44px;
+        height: 44px;
+    }
+
+    #nav ul {
+        overflow: hidden;
+        margin-bottom: 0;
+        padding: 6% 0;
+        background: #1e1e1e;
+        color: white;
+    }
+
+    .navbar-nav>li>a {
+        color: white;
+    }
+
+    .nav-item {
+        padding: 0 20px;
+    }
+}
+
+
+/* MAIN BODY */
+
+/* sections one to six */
+
+.section-banner{
+    height: 100%;
+    width: 100%;
+}
+
+.background {
+    background: url("https://www.starbucks.in/media/register4.jpg");
+    height: 560px;
+    max-height: 100%;
+    width: 100%;
+    background-position: top center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+
+}
+/* section six to 7 */
+
+.container-grid {
+    text-align: center;
+    box-sizing: border-box;
+    zoom: 1;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.content-head {
+    font-size: 1.5rem;
+    font-weight: 700;
+    word-spacing: 1px;
+    margin: 0 0 0.8em;
+}
+
+.content-para {
+    font-family: 'Crete Round', Georgia, 'Times New Roman', serif;
+    font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+
+    .row{
+        margin-left: 3rem;
+    }
+
+    .grid-content {
+        text-align: left;
+        padding: 0 40px;
+    }
+    .grid-content{
+        align-self: center;
+    }
+
+    .row.media-2 {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+}
+
+/* Section one background image settings */
+
+
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    .background {
+        max-height: 675px;
+        background-size: auto 675px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 540px) {
+    .background {
+        max-height: 760px;
+        background-size: auto 760px;
+    }
+
+}
+
+@media screen and (min-width: 541px) and (max-width:767px) {
+    .background {
+        height: 252px;
+        background-size: auto 252px;
+    }
+}
+
+
+
+@media screen and (min-width:1200px) {
+    .section01 .background {
+        background-image: url(images/register3.jpg);
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1199px) {
+    .section01 .background {
+        background-image: url(images/register2.jpg);
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .section01 .background {
+        background-image: url(images/register3.jpg);
+    }
+}
+
+@media screen and (min-width:541px) and (max-width:767px) {
+    .section01 .background {
+        background-image: url(images/register4.jpg);
+    }
+}
+
+
+/* section 02 background images settings */
+
+@media screen and (min-width: 541px) {
+    .section02 .background {
+        background-image: url(images/monsoon_delights_web_2400X560.jpg);
+    }
+}
+
+@media screen and (max-width: 541px) {
+    .section02 .background {
+        background-image: url(images/monsoon_delights_web_640x900.jpg);
+    }
+}
+
+/* section03 background image settings */
+
+@media screen and (min-width: 541px) {
+    .section03 .background {
+        background-image: url(images/tropical_favourite_web_2400X560.jpg);
+    }
+}
+
+@media screen and (max-width: 541px) {
+    .section03 .background {
+        background-image: url(images/tropical_favourite_web_640x900.jpg);
+    }
+}
+
+/* section04 background image settings */
+
+.section04 .background {
+    background-image: url(images/scoope-banner2.png);
+}
+
+@media screen and (min-width:1200px) {
+    .section04 .background {
+        background-image: url(images/scoope-banner4.png);
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1199px) {
+    .section04 .background {
+        background-image: url(images/scoope-banner3.png);
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .section04 .background {
+        background-image: url(images/scoope-banner4.png);
+    }
+}
+
+@media screen and (min-width:541px) and (max-width:767px) {
+    .section04 .background {
+        background-image: url(images/scoope-banner2.png);
+    }
+}
+
+
+/* section05 background image settings */
+
+@media screen and (min-width: 541px) {
+    .section05 .background {
+        background-image: url(images/Desktop_Mobile_Order_and_Pay_large.png);
+    }
+}
+
+@media screen and (max-width: 541px) {
+    .section05 .background {
+        background-image: url(images/Mobile_Mobile_Order_and_Pay_mobile.png);
+    }
+}
+
+/* section06 background image settings */
+
+@media screen and (min-width: 541px) {
+    .section06 .background {
+        background-image: url(images/web_revised_tcm87-72096.jpg);
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .section06 .background {
+        background-image: url(images/app_revised_tcm87-72097.jpg);
+    }
+}
+
+/* footer */
+.footer {
+    padding: 0;
+    border-bottom: 8px solid #382F2D;
+    min-height: 190px;
+    background: #f7f7f7;
+    color: #382f2d;
+    font-size: 1em;
+    line-height: 1.090909;
+}
+.footer-top {
+    background-color: #f0f0f0;
+    border-bottom: 3px solid #fff;
+    border-top: 3px solid #fff;
+    padding: 25px 0;
+    height: 100px;
+}
+.footer .social li{
+    width: 55px;
+    float: left;
+    height: 31px;
+    margin-bottom: .5em;
+}
+.footer h4{
+    line-height: 1.25;
+    font-size: 16px;
+    padding-left: 2em;
+}
+.footer li{
+    line-height: 2;
+}
+.footer a{
+    color: #3d3935;
+}
+
+.footer .copyright{
+    font-size: .7em;
+}
+
+@media screen and (min-width:768px) {
+    .accordion{
+        display: none;
+    }
+    .footer-global{
+        background-image: url(images/wordmark_footer_tcm87-397.png);
+        background-repeat: no-repeat;
+        background-position: 98.5% 0;
+        background-size: 16px;
+    }
+    footer .row{
+        min-height: 166px;
+        margin-top: 40px;
+    }
+    .footer-bottom{
+
+    }
+    .footer-bottom .row{
+        min-height: 50px;
+        margin-top: 0;
+    }
+    .footer-bottom li{
+        display: inline-block;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    .footer-global .row{
+        display: none;
+    }
+    
+}
+
+
+
+
+
+
+
